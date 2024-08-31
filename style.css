@@ -1,0 +1,30 @@
+* {
+  cursor: default;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+}
+
+.basic {
+  display: grid;
+  grid-template-columns: auto 80px;
+  grid-template-rows: 30px;
+}
+
+.todos {
+  padding-top: 10px;
+}
+
+.todo {
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Simple Todo App</title>
+</head>
+
+<body>
+  <div class="basic">
+    <input type="text" placeholder="what you want to do today ?" class="todo-text-field">
+    <input type="button" value="add todo" class="todo-add-button">
+  </div>
+
+  <div class="todos">
+  </div>
+
+
+  <script src="./PouchDB/pouchdb-9.0.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- async function loadTodos() {
+  try {
+      const result = await db.allDocs({ include_docs: true });
+      result.rows.forEach(row => {
+          const todoContainer = document.createElement('div');
+          todoContainer.className = 'todo-container';
+
+          const todo = document.createElement('div');
+          todo.className = 'todo';
+          todo.innerText = row.doc.text;
+
+          const checkbox = document.createElement('input');
+          checkbox.type = 'checkbox';
+          checkbox.className = 'checkbox';
+          checkbox.checked = row.doc.completed;
+
+          const todoDeleteButton = document.createElement('input');
+          todoDeleteButton.className = 'todo-delete-button';
+          todoDeleteButton.type = 'button';
+          todoDeleteButton.value = 'Del';
+
+          todoContainer.appendChild(todoDeleteButton);
+          todoContainer.appendChild(todo);
+          todoContainer.appendChild(checkbox);
+          todos.appendChild(todoContainer);
+      });
+  } catch (err) { console.error('Error loading todos:', err); }
+} -->
